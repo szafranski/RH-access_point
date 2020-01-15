@@ -10,9 +10,9 @@ curl -sL https://install.raspap.com | bash -s -- -y
 ________________
 
 (takes several minutes)
-
+________________
 sudo reboot
-
+________________
 connect to WiFi: raspi-webgui
 password: ChangeMe
 
