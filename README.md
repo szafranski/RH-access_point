@@ -59,7 +59,7 @@ static routers=2.2.2.2<br/>
 
 static domain_name_server=1.1.1.1 8.8.8.8<br/><br/>
 
-interface wlan0<br/>
+interface eth0<br/>
 static ip_address=3.3.3.3/24<br/>
 static routers=3.3.3.3<br/>
 
