@@ -115,11 +115,11 @@ connect to WiFi: NEW_NAME
 password: NEW_PASS
 if you have any problems connecting wifi with new name - try "forgetting the (old) network in WiFi settings" and than try again
 
-Now you should be able to enter the network using WiFi entering 2.2.2.2:5000 in the browser when WiFi is connected
-or using ethernet entering 3.3.3.3:5000 in the browser. 
+Now you should be able to enter the network using WiFi entering 10.10.10.10:5000 in the browser when WiFi is connected
+or using ethernet entering 172.20.20.20:5000 in the browser. 
 
 
-You can change network name and password entering 2.2.2.2 and logging using:
+You can change network name and password entering 10.10.10.10 and logging using:
 Username: admin
 Password: secret
 You can change this logging info Configure Auth in the gui if you want.
