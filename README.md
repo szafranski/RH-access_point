@@ -15,20 +15,26 @@ sudo reboot
 ________________
 
 connect to WiFi: raspi-webgui
+
 password: ChangeMe
 
+
 enter IP address: 10.3.141.1 in browser
+
 Username: admin
+
 Password: secret
 
 Click:
 Configure hotspot -> SSID (enter name you want, eg. NEW_NAME) 
+
 Wireless Mode (change to 802.11g - 2.4GHz)
 
 save settings
 
 Click:
 Configure hotspot -> security tab
+
 PSK (enter password that you want to have, eg. NEW_PASS)
 
 save settings
@@ -37,19 +43,24 @@ DON'T CHANGE OTHER SETTINGS IN GUI!
 
 
 in terminal (SSH):
+
 sudo nano /etc/dhcpcd.conf
 
 add at the end of file (or change last lines accordingly):
 ________________
 
 interface wlan0
+
 static ip_address=2.2.2.2/24
+
 static routers=2.2.2.2
 
 static domain_name_server=1.1.1.1 8.8.8.8
 
 interface wlan0
+
 static ip_address=3.3.3.3/24
+
 static routers=3.3.3.3
 
 static domain_name_server=1.1.1.1 8.8.8.8
@@ -58,7 +69,9 @@ ________________
 and save (Ctrl+X -> y -> enter)
 
 in terminal (SSH):
+
 sudo mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig
+
 sudo nano /etc/dnsmasq.conf
 
 and change the file so it looks like:
