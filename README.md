@@ -13,6 +13,7 @@ ________________
 ________________
 sudo reboot
 ________________
+
 connect to WiFi: raspi-webgui
 password: ChangeMe
 
@@ -64,10 +65,10 @@ and change the file so it looks like:
 ________________
 
 interface=wlan0
-  dhcp-range=2.2.2.2,2.2.2.255,255.255.255.0,24h
+dhcp-range=2.2.2.2,2.2.2.255,255.255.255.0,24h
 
 interface=eth0
-  dhcp-range=3.3.3.4,3.3.3.255,255.255.255.0,24h
+dhcp-range=3.3.3.4,3.3.3.255,255.255.255.0,24h
 ________________
 
 and save (Ctrl+X -> y -> enter)
