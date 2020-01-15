@@ -68,14 +68,14 @@ add at the end of file (or change last lines accordingly):
 ________________
 
 interface wlan0<br/>
-static ip_address=2.2.2.2/24<br/>
-static routers=2.2.2.2<br/>
+static ip_address=10.10.10.10/24</br>
+static routers=10.10.10.10</br>
 
 static domain_name_server=1.1.1.1 8.8.8.8<br/><br/>
 
-interface eth0<br/>
-static ip_address=3.3.3.3/24<br/>
-static routers=3.3.3.3<br/>
+interface eth0
+static ip_address=172.20.20.20/20<br/>
+static routers=172.20.20.20<br/>
 
 static domain_name_server=1.1.1.1 8.8.8.8
 ________________
@@ -94,10 +94,11 @@ and change the file so it looks like:
 ________________
 
 interface=wlan0<br/>
-dhcp-range=2.2.2.2,2.2.2.255,255.255.255.0,24h
+  dhcp-range=10.10.10.11,10.10.10.255,255.255.255.0,24h
+<br/>
 
 interface=eth0<br/>
-dhcp-range=3.3.3.4,3.3.3.255,255.255.255.0,24h
+  dhcp-range=172.20.20.21,172.20.20.255,255.255.255.0,24h
 ________________
 
 and save (Ctrl+X -> y -> enter)<br/>
