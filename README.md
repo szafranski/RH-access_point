@@ -1,7 +1,10 @@
 # RH-access_point
 additional simple instruction how to make RotorHazard race timer on raspberry without using external router
 
-The best moment to do that is after installation when you still have internet access on your raspberry.
+The best moment to do that is after installation when you still have internet access on your raspberry.<br/><br/>
+
+<br/>
+
   
 In terminal (SSH):
 ________________
@@ -12,11 +15,16 @@ ________________
 (takes several minutes)
 ________________
 sudo reboot
+<br/>
+
 ________________
+<br/>
 
 connect to WiFi: raspi-webgui
 
-password: ChangeMe<br/>
+password: ChangeMe<br/><br/><br/>
+
+
 
 
 
@@ -24,7 +32,8 @@ enter IP address: 10.3.141.1 in browser
 
 Username: admin
 
-Password: secret<br/>  
+Password: secret<br/>  <br/>
+
 
 
 Click:
@@ -33,6 +42,8 @@ Configure hotspot -> SSID (enter name you want, eg. NEW_NAME)
 Wireless Mode (change to 802.11g - 2.4GHz)
 
 save settings  
+<br/>
+<br/>
 
 Click:
 Configure hotspot -> security tab
@@ -40,8 +51,11 @@ Configure hotspot -> security tab
 PSK (enter password that you want to have, eg. NEW_PASS)
 
 save settings
+<br/>
 
 DON'T CHANGE OTHER SETTINGS IN GUI!  
+<br/>
+<br/>
 
 
 in terminal (SSH):
@@ -66,7 +80,9 @@ static routers=3.3.3.3<br/>
 static domain_name_server=1.1.1.1 8.8.8.8
 ________________
 
-and save (Ctrl+X -> y -> enter)
+and save (Ctrl+X -> y -> enter)<br/>
+<br/>
+
 
 in terminal (SSH):
 
@@ -84,10 +100,14 @@ interface=eth0<br/>
 dhcp-range=3.3.3.4,3.3.3.255,255.255.255.0,24h
 ________________
 
-and save (Ctrl+X -> y -> enter)
+and save (Ctrl+X -> y -> enter)<br/>
+<br/>
+
 
 in terminal (SSH):
 sudo reboot + disconnect raspberry from the router if it was connected
+<br/>
+<br/>
 
   
 connect to WiFi: NEW_NAME
