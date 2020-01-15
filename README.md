@@ -2,7 +2,7 @@
 additional simple instruction how to make RotorHazard race timer on raspberry without using external router
 
 The best moment to do that is after installation when you still have internet access on your raspberry.
-
+  
 In terminal (SSH):
 ________________
 
@@ -24,7 +24,7 @@ enter IP address: 10.3.141.1 in browser
 
 Username: admin
 
-Password: secret<br/>
+Password: secret<br/>  
 
 
 Click:
@@ -32,7 +32,7 @@ Configure hotspot -> SSID (enter name you want, eg. NEW_NAME)
 
 Wireless Mode (change to 802.11g - 2.4GHz)
 
-save settings
+save settings  
 
 Click:
 Configure hotspot -> security tab
@@ -41,7 +41,7 @@ PSK (enter password that you want to have, eg. NEW_PASS)
 
 save settings
 
-DON'T CHANGE OTHER SETTINGS IN GUI!
+DON'T CHANGE OTHER SETTINGS IN GUI!  
 
 
 in terminal (SSH):
@@ -89,7 +89,7 @@ and save (Ctrl+X -> y -> enter)
 in terminal (SSH):
 sudo reboot + disconnect raspberry from the router if it was connected
 
-
+  
 connect to WiFi: NEW_NAME
 password: NEW_PASS
 if you have any problems connecting wifi with new name - try "forgetting the (old) network in WiFi settings" and than try again
