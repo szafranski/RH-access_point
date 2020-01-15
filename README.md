@@ -44,23 +44,21 @@ DON'T CHANGE OTHER SETTINGS IN GUI!
 
 in terminal (SSH):
 
+________________
+
 sudo nano /etc/dhcpcd.conf
 
 add at the end of file (or change last lines accordingly):
 ________________
 
 interface wlan0
-
 static ip_address=2.2.2.2/24
-
 static routers=2.2.2.2
 
 static domain_name_server=1.1.1.1 8.8.8.8
 
 interface wlan0
-
 static ip_address=3.3.3.3/24
-
 static routers=3.3.3.3
 
 static domain_name_server=1.1.1.1 8.8.8.8
