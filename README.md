@@ -111,19 +111,23 @@ sudo reboot + disconnect raspberry from the router if it was connected
 <br/>
 
   
-connect to WiFi: NEW_NAME
-password: NEW_PASS
+connect to WiFi: NEW_NAME <br/>
+password: NEW_PASS <br/> <br/>
 if you have any problems connecting wifi with new name - try "forgetting the (old) network in WiFi settings" and than try again
+
+<br/> <br/>
 
 Now you should be able to enter the network using WiFi entering 10.10.10.10:5000 in the browser when WiFi is connected
 or using ethernet entering 172.20.20.20:5000 in the browser. 
 
+<br/> <br/>
 
-You can change network name and password entering 10.10.10.10 and logging using:
-Username: admin
-Password: secret
+You can change network name and password entering 10.10.10.10 and logging using: <br/>
+Username: admin <br/>
+Password: secret <br/>
 You can change this logging info Configure Auth in the gui if you want.
 
+<br/> <br/>
 
 IMPORTANT! Don't connect ethernet cable to any DHCP-server capable device like another router or don't use WiFi client mode after this configuration.
 It would mess it up.
