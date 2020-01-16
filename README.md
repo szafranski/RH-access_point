@@ -40,7 +40,7 @@ sudo reboot + unplug the Ethernet cable if was connected
 ________________
 <br/>
 
-connect PC to WiFi: <br/>
+connect PC to WiFi network: <br/>
 name: raspi-webgui<br/>
 password: ChangeMe<br/><br/><br/>
 
@@ -177,6 +177,8 @@ sudo cp /etc/dnsmasq.conf.my /etc/dnsmasq.conf
 
 sudo cp /etc/dhcpcd.conf.my /etc/dhcpcd.conf
 
+Reboot and unplug from the router- if was connected.
+<br/>
 If you are making any changes in raspberry configuration (changing WiFi password, changing WiFi to 5Ghz - for some reason, changing WiFi country etc.) - always check if everything still works AFTER REBOOTING!
 
 
