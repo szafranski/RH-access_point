@@ -1,5 +1,6 @@
 # RH-access_point
-additional simple instruction how to make RotorHazard race timer on raspberry without using external router
+additional simple instruction how to make RotorHazard race timer on raspberry without using external router.
+
 <br/>
 Confirmed to work on Raspberry Pi 3 B+ with Raspbian Buster Lite installed.
 
@@ -80,7 +81,7 @@ DON'T CHANGE OTHER SETTINGS IN GUI!
 <br/>
 
 
-in terminal (SSH):
+In terminal (SSH):
 
 ________________
 
@@ -130,7 +131,7 @@ and save (Ctrl+X -> y -> enter)<br/>
 
 <br/>
 
-in terminal (SSH):
+In terminal (SSH):
 
 <br/>
 
@@ -142,7 +143,7 @@ sudo reboot
 <br/>
 
   
-connect PC to WiFi network: <br/>
+Connect PC to WiFi network: <br/>
 name: RH-TIMER<br/>
 password: timerpass <br/> <br/>
 if you have any problems connecting wifi with new name - try "forgetting" the (old) network in WiFi settings and than try again
