@@ -154,7 +154,7 @@ It would mess it up.
 
 <br/> <br/>
 
-If for any reasons you would have problems in the future with connecting to the timer - eg. if everything worked well, but you connected raspberry to the router one time and since than you have problems with achieving the connection -  the most probable reason is wrong configuration in 2 files:<br/>
+If for any reasons you would have problems in the future with connecting to the timer - eg. if everything worked well but you entered the RaspAP configuration site, saved some changes (like WiFi password) or you connected raspberry to the router one time etc. and since than you have problems with achieving the connection -  the most probable reason is wrong configuration in 2 files:<br/>
 /etc/dhcpcd.conf<br/>
 /etc/dnsmasq.conf<br/>
 
