@@ -151,3 +151,11 @@ You can change this logging info Configure Auth in the gui if you want.
 
 IMPORTANT! Don't connect ethernet cable to any DHCP-server capable device like another router or don't use WiFi client mode after this configuration.
 It would mess it up.
+
+<br/> <br/>
+
+If for any reasons you would have problems in the future with connecting to the timer - eg. if everything worked well, but you connected raspberry to the router one time and since than you have problems with achieving the connection -  the most probable reason is wrong configuration in 2 files:<br/>
+/etc/dhcpcd.conf<br/>
+/etc/dnsmasq.conf<br/>
+
+Check those first.
