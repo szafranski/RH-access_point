@@ -20,7 +20,8 @@ ________________
 Set the WiFi country in raspi-config's Localisation Options: 
 
 In terminal (SSH):<br/>
-sudo raspi-config -> 4. point -> I4 - Change WiFi country -> select -> enter -> finish
+sudo raspi-config 
+( 4. point -> I4 - Change WiFi country -> select -> enter -> finish )
 
 <br/>
 
