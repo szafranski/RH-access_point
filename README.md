@@ -3,6 +3,24 @@ additional simple instruction how to make RotorHazard race timer on raspberry wi
 
 The best moment to do that is after installation when you still have internet access on your raspberry.<br/><br/>
 
+<br/> <br/>
+
+Connect raspberry to internet - eg. with Ethernet cable
+
+<br/>
+
+Update raspberry - in terminal:
+
+<br/>
+
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo reboot
+
+<br/>
+
+Set the WiFi country in raspi-config's Localisation Options: sudo raspi-config
+
 <br/>
 
   
