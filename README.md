@@ -127,13 +127,14 @@ ________________
 
 and save (Ctrl+X -> y -> enter)<br/>
 
+<br/>
+
 in terminal (SSH):
 
 <br/>
 
 sudo cp /etc/dnsmasq.conf /etc/dnsmasq.conf.my
 
-<br/>
 
 sudo reboot
 <br/>
@@ -169,6 +170,12 @@ If for any reasons you would have problems in the future with connecting to the 
 
 Check those first - connecting with SSH using external router or plug sd card to Linux PC (or Windows using special drivers - cause Windows can't write any changes to ext4 partitions natively) and manually check those.<br/>
 If you decide to use external router for troubleshooting - after saving the changes in the files, remember to reboot raspberry and unplug ethernet cable immediately.
+
+The easiest way to make sure those files are configured correctly is:
+
+sudo cp /etc/dnsmasq.conf.my /etc/dnsmasq.conf
+
+sudo cp /etc/dhcpcd.conf.my /etc/dhcpcd.conf
 
 If you are making any changes in raspberry configuration (changing WiFi password, changing WiFi to 5Ghz - for some reason, changing WiFi country etc.) - always check if everything still works AFTER REBOOTING!
 
