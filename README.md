@@ -7,7 +7,7 @@ The best moment to do that is after installation when you still have internet ac
 
 Update raspberry - in terminal:
 
-<br/>
+
 ________________
 
 sudo apt-get update <br/>
