@@ -5,10 +5,6 @@ The best moment to do that is after installation when you still have internet ac
 
 <br/> <br/>
 
-Connect raspberry to internet - eg. with Ethernet cable
-
-<br/>
-
 Update raspberry - in terminal:
 
 <br/>
