@@ -17,7 +17,10 @@ ________________
 
 <br/>
 
-Set the WiFi country in raspi-config's Localisation Options: sudo raspi-config
+Set the WiFi country in raspi-config's Localisation Options: 
+
+In terminal (SSH):
+sudo raspi-config
 
 <br/>
 
