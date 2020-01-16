@@ -106,11 +106,8 @@ and save (Ctrl+X -> y -> enter)<br/>
 <br/>
 
 in terminal (SSH):
-<br/>
+<br/> <br/>
 sudo cp /etc/dhcpcd.conf /etc/dhcpcd.conf.my
-
-<br/>
-
 
 sudo cp /etc/dnsmasq.conf /etc/dnsmasq.conf.orig<br/>
 
