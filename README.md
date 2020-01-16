@@ -59,7 +59,7 @@ Password: secret<br/>  <br/>
 Click:
 Configure hotspot -> SSID (enter name you want, eg. NEW_NAME) 
 
-Wireless Mode (change to 802.11g - 2.4GHz)
+Wireless Mode (change to 802.11n - 2.4GHz)
 
 save settings  
 <br/>
