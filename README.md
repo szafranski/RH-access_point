@@ -3,15 +3,17 @@ additional simple instruction how to make RotorHazard race timer on raspberry wi
 
 The best moment to do that is after installation when you still have internet access on your raspberry.<br/><br/>
 
-<br/> <br/>
+<br/> 
 
 Update raspberry - in terminal:
 
 <br/>
+________________
 
 sudo apt-get update <br/>
 sudo apt-get dist-upgrade <br/>
 sudo reboot
+________________
 
 <br/>
 
@@ -26,7 +28,7 @@ ________________
 curl -sL https://install.raspap.com | bash -s -- -y
 ________________
 
-(takes several minutes)
+(takes several minutes - if nothing happened in the terminal - you don't have internet access which is required)
 ________________
 sudo reboot + unplug the Ethernet cable if was connected
 <br/>
