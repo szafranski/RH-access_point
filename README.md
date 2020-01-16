@@ -57,7 +57,7 @@ Password: secret<br/>  <br/>
 
 
 Click:
-Configure hotspot -> SSID (enter name you want, eg. NEW_NAME) 
+Configure hotspot -> SSID (enter name you want, eg. RH-TIMER) 
 
 Wireless Mode (change to 802.11n - 2.4GHz)
 
@@ -68,7 +68,7 @@ save settings
 Click:
 Configure hotspot -> security tab
 
-PSK (enter password that you want to have, eg. NEW_PASS)
+PSK (enter password that you want to have, eg. timerpass)
 
 save settings
 <br/>
@@ -140,8 +140,8 @@ sudo reboot
 <br/>
 
   
-connect to WiFi: NEW_NAME <br/>
-password: NEW_PASS <br/> <br/>
+connect to WiFi: RH-TIMER<br/>
+password: timerpass <br/> <br/>
 if you have any problems connecting wifi with new name - try "forgetting the (old) network in WiFi settings" and than try again
 
 <br/> <br/>
