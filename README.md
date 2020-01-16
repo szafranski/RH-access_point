@@ -102,7 +102,9 @@ ________________
 
 and save (Ctrl+X -> y -> enter)<br/>
 <br/>
+sudo cp /etc/dhcpcd.conf /etc/dhcpcd.conf.my
 
+<br/>
 
 in terminal (SSH):
 
@@ -123,7 +125,9 @@ ________________
 
 and save (Ctrl+X -> y -> enter)<br/>
 <br/>
+sudo cp /etc/dnsmasq.conf /etc/dnsmasq.conf.my
 
+<br/>
 
 in terminal (SSH):
 sudo reboot
