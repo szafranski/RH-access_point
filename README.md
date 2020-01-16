@@ -4,6 +4,8 @@ additional simple instruction how to make RotorHazard race timer on raspberry wi
 <br/>
 Confirmed to work on Raspberry Pi 3 B+ with Raspbian Buster Lite installed.
 
+<br/> 
+
 The best moment to do that is after fresh installation of RotorHazard and Raspbian when you still have internet access on your raspberry.<br/><br/> 
 
 <br/> 
