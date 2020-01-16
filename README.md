@@ -158,6 +158,8 @@ If for any reasons you would have problems in the future with connecting to the 
 /etc/dhcpcd.conf<br/>
 /etc/dnsmasq.conf<br/>
 
+If you are making any changes in raspberry configuration - always check if everything works after changes like this after rebooting!
+
 Check those first - connecting with SSH using external router or plug sd card to Linux PC and manually check those.<br/>
 If you decide to use external router for troubleshooting - after saving the changes in the files, remember to reboot raspberry and unplug ethernet cable immediately.
 
