@@ -41,7 +41,7 @@ ________________
 <br/>
 
 connect PC to WiFi: <br/>
-name: raspi-webgui
+name: raspi-webgui<br/>
 password: ChangeMe<br/><br/><br/>
 
 
