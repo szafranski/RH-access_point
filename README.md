@@ -1,12 +1,12 @@
 # RH-access_point
 additional simple instruction how to make RotorHazard race timer on raspberry without using external router
 
-The best moment to do that is after installation when you still have internet access on your raspberry.<br/><br/>
+The best moment to do that is after fresh installation of RotorHazard and Raspbian when you still have internet access on your raspberry.<br/><br/> 
 
 <br/> 
 
-Update raspberry - in terminal:
-
+Update raspberry - in terminal:<br/> 
+(you have to have internet connetion)
 
 ________________
 
