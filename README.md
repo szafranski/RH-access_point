@@ -140,7 +140,8 @@ sudo reboot
 <br/>
 
   
-connect to WiFi: RH-TIMER<br/>
+connect PC to WiFi network: <br/>
+name: RH-TIMER<br/>
 password: timerpass <br/> <br/>
 if you have any problems connecting wifi with new name - try "forgetting the (old) network in WiFi settings" and than try again
 
