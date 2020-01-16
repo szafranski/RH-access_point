@@ -158,9 +158,9 @@ If for any reasons you would have problems in the future with connecting to the 
 /etc/dhcpcd.conf<br/>
 /etc/dnsmasq.conf<br/>
 
-Check those first - connecting with SSH using external router or plug sd card to Linux PC and manually check those.<br/>
+Check those first - connecting with SSH using external router or plug sd card to Linux PC (or Windows using special drivers - cause Windows can't write any changes to ext4 partitions natively) and manually check those.<br/>
 If you decide to use external router for troubleshooting - after saving the changes in the files, remember to reboot raspberry and unplug ethernet cable immediately.
 
-If you are making any changes in raspberry configuration (changing WiFi password, changing WiFi to 5Ghz - for some reason, changing WiFi country etc.) - always check if everything works AFTER REBOOTING!
+If you are making any changes in raspberry configuration (changing WiFi password, changing WiFi to 5Ghz - for some reason, changing WiFi country etc.) - always check if everything still works AFTER REBOOTING!
 
 
