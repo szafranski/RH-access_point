@@ -6,7 +6,7 @@ The best moment to do that is after fresh installation of RotorHazard and Raspbi
 <br/> 
 
 Update raspberry - in terminal:<br/> 
-(you have to have internet connetion)
+(you have to have internet connection)
 
 ________________
 
