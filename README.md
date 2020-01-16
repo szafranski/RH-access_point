@@ -146,15 +146,18 @@ if you have any problems connecting wifi with new name - try "forgetting the (ol
 
 <br/> <br/>
 
-Now you should be able to enter the network using WiFi entering 10.10.10.10:5000 in the browser when WiFi is connected
-or using ethernet entering 172.20.20.20:5000 in the browser. 
+Now you should be able to enter the network typing in the browser:
+10.10.10.10:5000 - using WiFi
+172.20.20.20:5000 - using ethernet.
 
 <br/> <br/>
+
+Optional but not recommended:
 
 You can change network name and password entering 10.10.10.10 and logging using: <br/>
 Username: admin <br/>
 Password: secret <br/>
-You can change this logging info Configure Auth in the gui if you want.
+You can change this logging info as well in Configure Auth in the gui if you want.
 
 <br/> <br/>
 
