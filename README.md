@@ -175,12 +175,16 @@ Check those first - connecting with SSH using external router or plug sd card to
 If you decide to use external router for troubleshooting - after saving the changes in the files, remember to reboot raspberry and unplug ethernet cable immediately.
 
 The easiest way to make sure those files are configured correctly is:
+________________
 
 sudo cp /etc/dnsmasq.conf.my /etc/dnsmasq.conf
 
 sudo cp /etc/dhcpcd.conf.my /etc/dhcpcd.conf
 
+
 Reboot and unplug from the router- if was connected.
+________________
+
 <br/>
 If you are making any changes in raspberry configuration (changing WiFi password, changing WiFi to 5Ghz - for some reason, changing WiFi country etc.) - always check if everything still works AFTER REBOOTING!
 
