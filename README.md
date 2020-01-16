@@ -102,11 +102,13 @@ ________________
 
 and save (Ctrl+X -> y -> enter)<br/>
 <br/>
+
+in terminal (SSH):
+<br/>
 sudo cp /etc/dhcpcd.conf /etc/dhcpcd.conf.my
 
 <br/>
 
-in terminal (SSH):
 
 sudo mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig<br/>
 
@@ -124,12 +126,15 @@ interface=eth0<br/>
 ________________
 
 and save (Ctrl+X -> y -> enter)<br/>
+
+in terminal (SSH):
+
 <br/>
+
 sudo cp /etc/dnsmasq.conf /etc/dnsmasq.conf.my
 
 <br/>
 
-in terminal (SSH):
 sudo reboot
 <br/>
 <br/>
