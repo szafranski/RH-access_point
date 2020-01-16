@@ -40,8 +40,8 @@ sudo reboot + unplug the Ethernet cable if was connected
 ________________
 <br/>
 
-connect PC to WiFi: raspi-webgui
-
+connect PC to WiFi: <br/>
+name: raspi-webgui
 password: ChangeMe<br/><br/><br/>
 
 
