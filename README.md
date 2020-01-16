@@ -82,6 +82,8 @@ in terminal (SSH):
 
 ________________
 
+sudo cp /etc/dhcpcd.conf /etc/dhcpcd.conf.orig
+
 sudo nano /etc/dhcpcd.conf
 
 add at the end of file (or change last lines accordingly):
@@ -110,7 +112,7 @@ sudo cp /etc/dhcpcd.conf /etc/dhcpcd.conf.my
 <br/>
 
 
-sudo mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig<br/>
+sudo cp /etc/dnsmasq.conf /etc/dnsmasq.conf.orig<br/>
 
 sudo nano /etc/dnsmasq.conf
 
