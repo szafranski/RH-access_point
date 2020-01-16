@@ -9,8 +9,8 @@ Update raspberry - in terminal:
 
 <br/>
 
-sudo apt-get update
-sudo apt-get dist-upgrade
+sudo apt-get update <br/>
+sudo apt-get dist-upgrade <br/>
 sudo reboot
 
 <br/>
@@ -28,13 +28,13 @@ ________________
 
 (takes several minutes)
 ________________
-sudo reboot
+sudo reboot + unplug the Ethernet cable if was connected
 <br/>
 
 ________________
 <br/>
 
-connect to WiFi: raspi-webgui
+connect PC to WiFi: raspi-webgui
 
 password: ChangeMe<br/><br/><br/>
 
@@ -120,7 +120,7 @@ and save (Ctrl+X -> y -> enter)<br/>
 
 
 in terminal (SSH):
-sudo reboot + disconnect raspberry from the router if it was connected
+sudo reboot
 <br/>
 <br/>
 
