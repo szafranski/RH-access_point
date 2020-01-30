@@ -168,7 +168,7 @@ You can change this logging info as well in Configure Auth in the gui if you wan
 <br/> <br/>
 
 IMPORTANT! Don't connect ethernet cable to any DHCP-server capable device like another router or don't use WiFi client mode after this configuration.
-It would mess it up.
+It can mess it up.
 
 <br/> <br/>
 
