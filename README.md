@@ -1,5 +1,5 @@
 # RH-access_point
-additional simple instruction how to make RotorHazard race timer on raspberry without using external router.
+additional simple instruction how to make RotorHazard race timer working on raspberry without using external router.
 
 <br/>
 Confirmed to work on Raspberry Pi 3 B+ with Raspbian Buster Lite installed.
