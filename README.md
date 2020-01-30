@@ -97,13 +97,11 @@ ________________
 interface wlan0<br/>
 static ip_address=10.10.10.10/24</br>
 static routers=10.10.10.10</br>
-
 static domain_name_server=1.1.1.1 8.8.8.8<br/><br/>
 
 interface eth0
 static ip_address=172.20.20.20/20<br/>
 static routers=172.20.20.20<br/>
-
 static domain_name_server=1.1.1.1 8.8.8.8
 ________________
 
@@ -148,7 +146,7 @@ sudo reboot
 Connect PC to WiFi network: <br/>
 name: RH-TIMER<br/>
 password: timerpass <br/> <br/>
-if you have any problems connecting wifi with new name - try "forgetting" the (old) network in WiFi settings and than try again
+if you have any problems connecting wifi with new name - try "forgetting" the (old) network in PC's WiFi settings and than try again
 
 <br/> <br/>
 
@@ -176,7 +174,7 @@ If for any reasons you would have problems in the future with connecting to the 
 /etc/dhcpcd.conf<br/>
 /etc/dnsmasq.conf<br/>
 
-Check those first - connecting with SSH using external router or plug sd card to Linux PC (or Windows using special drivers - cause Windows can't write any changes to ext4 partitions natively) and manually check those.<br/>
+Check those first - connecting with SSH using external router or plug sd card to Linux PC/VM (or Windows using special drivers - cause Windows can't write any changes to ext4 partitions natively) and manually check those.<br/>
 If you decide to use external router for troubleshooting - after saving the changes in the files, remember to reboot raspberry and unplug ethernet cable immediately.
 
 The easiest way to make sure those files are configured correctly is:
