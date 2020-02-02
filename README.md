@@ -99,7 +99,7 @@ static ip_address=10.10.10.10/24</br>
 static routers=10.10.10.10</br>
 static domain_name_server=1.1.1.1 8.8.8.8<br/><br/>
 
-interface eth0
+interface eth0<br/>
 static ip_address=172.20.20.20/20<br/>
 static routers=172.20.20.20<br/>
 static domain_name_server=1.1.1.1 8.8.8.8
