@@ -1,0 +1,52 @@
+enter raspberry terminal using ssh (with wifi or ethernet) 
+better with wifi
+
+change sudo nano /etc/dhcpcd.conf
+
+interface eth0
+#static ip_address=172.20.20.20/20
+#static routers=172.20.20.20
+#static domain_name_server=1.1.1.1 8.8.8.8
+
+Windows
+Control Panel
+Networks and sharing
+name of Wifi network - click
+properities
+sharing tab
+share this ethernet connection using: ethernet
+
+Raspberry - reboot
+
+connect raspberry with ethernet
+enter windows power shell or cmd and type ipconfig
+look at Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::e52a:afd:b823:55ae%7
+   IPv4 Address. . . . . . . . . . . : 192.168.137.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+look at IPv4 Address 
+download Advanced IP scanner
+
+paste 192.168.137.0-192.168.137.255
+
+scan
+
+look after raspberry
+check it's IP
+
+connect to Raspberry ssh with this ip
+
+you now have internet access on raspberry
+
+after you will be done change sudo nano /etc/dhcpcd.conf to previous state
+
+reboot raspberry
+
+disable internet sharing on your PC
+
+
+
