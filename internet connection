@@ -1,52 +1,88 @@
-enter raspberry terminal using ssh (with wifi or ethernet) 
-better with wifi
+enter raspberry terminal using ssh (preferably using ethernet) 
 
-change sudo nano /etc/dhcpcd.conf
+change dhcpcd.conf in etc using
+
+sudo nano /etc/dhcpcd.conf
+
+so last lines look like:
 
 interface eth0
 #static ip_address=172.20.20.20/20
 #static routers=172.20.20.20
 #static domain_name_server=1.1.1.1 8.8.8.8
 
-Windows
+Ctrl+X - save the file 
+
+(you can as well copy the file to same another name and create new one without those lines commented with #)
+
+reboot Raspberry
+sudo reboot
+
+On Windows PC:
+connect PC to WiFi
 Control Panel
 Networks and sharing
-name of Wifi network - click
-properities
-sharing tab
-share this ethernet connection using: ethernet
+click [name of Wifi network]
+click Properities
+open "Sharing" tab
+"Allow other users ... share this ethernet connection using:" 
+Home internet connection - choose -     "ethernet"
+OK
 
-Raspberry - reboot
 
-connect raspberry with ethernet
-enter windows power shell or cmd and type ipconfig
-look at Ethernet adapter Ethernet:
+Open command prompt (cmd) and type "ipconfig"
+
+You can openit using Win+R and enter "cmd" + OK
+
+look after
+and 
+IPv4 Address
+( in this case 192.168.137.1 )
+
+Ethernet adapter Ethernet:
 
    Connection-specific DNS Suffix  . :
    Link-local IPv6 Address . . . . . : fe80::e52a:afd:b823:55ae%7
-   IPv4 Address. . . . . . . . . . . : 192.168.137.1
+   IPv4 Address. . . . . . . . . . . : 192.168.137.1 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
    Default Gateway . . . . . . . . . :
 
-look at IPv4 Address 
-download Advanced IP scanner
+Download Advanced IP scanner
 
-paste 192.168.137.0-192.168.137.255
+open it and in the search field enter range of the IP searching
+( in this case: 192.168.137.0 - 192.168.137.255 )
 
-scan
+click Scan
 
-look after raspberry
+look after raspberrypi
 check it's IP
+( right click -> copy -> IP )
 
-connect to Raspberry ssh with this ip
+Connect to Raspberry using SSH with this IP
+( in this case 192.168.137.11 )
 
-you now have internet access on raspberry
+You now have internet access on raspberry and you can update server, raspberry etc.
+You can confirm this entering "sudo apt update" or "ping google.com"
+   
+After you will be done change dhcpcd.conf to previous state
 
-after you will be done change sudo nano /etc/dhcpcd.conf to previous state
+sudo nano /etc/dhcpcd.conf
+
+so last lines look like:
+
+interface eth0
+static ip_address=172.20.20.20/20
+static routers=172.20.20.20
+static domain_name_server=1.1.1.1 8.8.8.8
+
+save with Ctrl+X
 
 reboot raspberry
+sudo reboot
 
-disable internet sharing on your PC
+Disable internet sharing on your PC unchecking the option "Allow other devices to share this internet connection"
 
+You may have to unplug the ethernet cable from raspberry for few seconds and plug it again.
 
+You can confirm that raspberry acts like access point again entering "ipconfig" on PC in cmd and check if IPv4 Address looks like 172.20.20.XX 
 
