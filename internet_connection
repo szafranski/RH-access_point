@@ -88,6 +88,7 @@ You now have internet access on raspberry and you can update server, raspberry e
 You can confirm this entering "sudo apt update" or "ping google.com"
    
 After you will be done change dhcpcd.conf to previous state
+(or copy previous version of file "sudo cp /etc/dhcpcd.conf.bup /etc/dhcpcd.conf")
 
 ON RASPBERRY:
 __________________________________________________________
