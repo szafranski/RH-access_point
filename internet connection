@@ -1,27 +1,41 @@
+Assumptions:
+you have WiFi network that you can connect your PC to
+OR
+have access to the router and can plug raspberry to the router using ethernet cable
+
+ON RASPBERRY:
 enter raspberry terminal using SSH (preferably using ethernet) 
 
 backup dhcpcd.conf file
+__________________________________________________________
 sudo cp /etc/dhcpcd.conf /etc/dhcpcd.conf.bup
+__________________________________________________________
 
 change dhcpcd.conf in etc using
 
+__________________________________________________________
 sudo nano /etc/dhcpcd.conf
+__________________________________________________________
 
 so last lines look like:
-[code]
+__________________________________________________________
 interface eth0
 #static ip_address=172.20.20.20/20
 #static routers=172.20.20.20
 #static domain_name_server=1.1.1.1 8.8.8.8
-[/code]
-
+__________________________________________________________
 Ctrl+X - save the file 
 
 (you can as well copy the file to same another name and create new one without those lines commented with #)
 
 reboot Raspberry
-sudo reboot
 
+__________________________________________________________
+sudo reboot
+__________________________________________________________
+
+
+ON PC:   ----> skip this step if you will be using router instead
 On Windows PC:
 connect PC to WiFi
 Control Panel
@@ -36,11 +50,11 @@ OK
 
 Open command prompt (cmd) and type "ipconfig"
 
-You can openit using Win+R and enter "cmd" + OK
+You can open it using Win+R and entering "cmd" + OK
 
-look after
+look after "Ethernet adapter Ethernet"
 and 
-IPv4 Address
+"IPv4 Address"
 ( in this case 192.168.137.1 )
 
 Ethernet adapter Ethernet:
@@ -51,14 +65,19 @@ Ethernet adapter Ethernet:
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
    Default Gateway . . . . . . . . . :
 
-Download Advanced IP scanner
+END ON PC
 
-open it and in the search field enter range of the IP searching
-( in this case: 192.168.137.0 - 192.168.137.255 )
+
+Download Advanced IP scanner program 
+
+open IP scanner and in the search field enter range of the IP searching
+( in this case: 192.168.137.0 - 255 ) 
+if you are using router you probably have to enter XXX.XXX.XXX.0 - 255
+those XXX numbers can be checked in routers settings or entering "ipconfig" in CMD 
 
 click Scan
 
-look after raspberrypi
+look after "raspberrypi"
 check it's IP
 ( right click -> copy -> IP )
 
@@ -70,6 +89,9 @@ You can confirm this entering "sudo apt update" or "ping google.com"
    
 After you will be done change dhcpcd.conf to previous state
 
+ON RASPBERRY:
+__________________________________________________________
+
 sudo nano /etc/dhcpcd.conf
 
 so last lines look like:
@@ -78,13 +100,15 @@ interface eth0
 static ip_address=172.20.20.20/20
 static routers=172.20.20.20
 static domain_name_server=1.1.1.1 8.8.8.8
+__________________________________________________________
 
 save with Ctrl+X
 
 reboot raspberry
+
 sudo reboot
 
-Disable internet sharing on your PC unchecking the option "Allow other devices to share this internet connection"
+Disable internet sharing on your PC unchecking the option "Allow other devices to share this internet connection" ---> skip this if you were using router
 
 You may have to unplug the ethernet cable from raspberry for few seconds and plug it again.
 
