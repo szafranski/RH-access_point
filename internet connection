@@ -1,15 +1,19 @@
-enter raspberry terminal using ssh (preferably using ethernet) 
+enter raspberry terminal using SSH (preferably using ethernet) 
+
+backup dhcpcd.conf file
+sudo cp /etc/dhcpcd.conf /etc/dhcpcd.conf.bup
 
 change dhcpcd.conf in etc using
 
 sudo nano /etc/dhcpcd.conf
 
 so last lines look like:
-
+[code]
 interface eth0
 #static ip_address=172.20.20.20/20
 #static routers=172.20.20.20
 #static domain_name_server=1.1.1.1 8.8.8.8
+[/code]
 
 Ctrl+X - save the file 
 
@@ -86,3 +90,5 @@ You may have to unplug the ethernet cable from raspberry for few seconds and plu
 
 You can confirm that raspberry acts like access point again entering "ipconfig" on PC in cmd and check if IPv4 Address looks like 172.20.20.XX 
 
+
+!! If something went wrong, you have any issues etc. you can allways just connect to raspberry using WiFi access point (RH-race_timer) with SSH and undo all changes etc.
