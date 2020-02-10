@@ -188,7 +188,7 @@ ________________
 <br/>
 If you are making any changes in raspberry configuration (changing WiFi password, changing WiFi to 5Ghz - for some reason, changing WiFi country etc.) - always check if everything still works AFTER REBOOTING!
 
-
-UPDATE!! 
+<br/><br/>
+!!!!!!!!!!
 If you want to have internet connection on your raspberry check out the file: 
 https://github.com/szafranski/RH-access_point/blob/master/internet_connection
