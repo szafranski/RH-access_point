@@ -164,18 +164,15 @@ Password: secret <br/>
 You can change this logging info as well in Configure Auth in the gui if you want.
 
 <br/> <br/>
-
-IMPORTANT! Don't connect ethernet cable to any DHCP-server capable device like another router or don't use WiFi client mode after this configuration.
-It can mess it up.
-
 <br/> <br/>
-
+Sometimes connecting ethernet cable to any DHCP-server capable device like another router can mess up the configuration.
+<br/> <br/>
 If for any reasons you would have problems in the future with connecting to the timer - eg. if everything worked well but you entered the RaspAP configuration site, saved some changes (like WiFi password) or you connected raspberry to the router one time etc. and since than you have problems with achieving the connection -  the most probable reason is wrong configuration in 2 files:<br/>
 /etc/dhcpcd.conf<br/>
 /etc/dnsmasq.conf<br/>
 
 Check those first - connecting with SSH using external router or plug sd card to Linux PC/VM (or Windows using special drivers - cause Windows can't write any changes to ext4 partitions natively) and manually check those.<br/>
-If you decide to use external router for troubleshooting - after saving the changes in the files, remember to reboot raspberry and unplug ethernet cable immediately.
+If you decide to use external router for troubleshooting - after saving the changes in the files, remember to reboot raspberry.
 
 The easiest way to make sure those files are configured correctly is:
 ________________
@@ -192,3 +189,6 @@ ________________
 If you are making any changes in raspberry configuration (changing WiFi password, changing WiFi to 5Ghz - for some reason, changing WiFi country etc.) - always check if everything still works AFTER REBOOTING!
 
 
+UPDATE!! 
+If you want to have internet connection on your raspberry check out the file: 
+https://github.com/szafranski/RH-access_point/blob/master/internet_connection
