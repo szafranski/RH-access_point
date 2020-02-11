@@ -1,5 +1,7 @@
 Assumptions:
-you have WiFi network that you can connect your PC to
+You already performed steps from README file.
+
+You have WiFi network that you can connect your PC to (router, hotspot on the phone etc)
 OR
 have access to the router and can plug raspberry to the router using ethernet cable
 
@@ -35,7 +37,7 @@ sudo reboot
 __________________________________________________________
 
 
-ON PC:   ----> skip this step if you will be using router instead
+ON PC:   ----> skip those step if you will be using router instead
 On Windows PC:
 connect PC to WiFi
 Control Panel
