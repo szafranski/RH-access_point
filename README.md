@@ -190,5 +190,5 @@ If you are making any changes in raspberry configuration (changing WiFi password
 
 <br/><br/>
 !!!!!!!!!!
-If you want to have internet connection on your raspberry check out the file: 
+If you want to have internet connection on your raspberry after this mod check out the file: 
 https://github.com/szafranski/RH-access_point/blob/master/internet_connection
