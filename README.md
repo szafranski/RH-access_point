@@ -1,4 +1,7 @@
 # RH-access_point
+
+( you can check out https://github.com/szafranski/RH-ota - right now this process is automated. This repo contains much more functionality besides AP configuring. )
+
 additional simple instruction how to make RotorHazard race timer working on raspberry without using external router.
 
 <br/>
